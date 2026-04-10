@@ -1,4 +1,12 @@
 
+-- This query identifies the top 10 highest-paying remote "Data Analyst" positions.
+-- It first filters, sorts, and limits job postings using a CTE.
+-- Then, it joins skill tables to attach all relevant skills for each job.
+-- Multiple skill rows are combined into a single comma-separated string using STRING_AGG,
+-- ensuring one row per job in the final result.
+-- Jobs without skills are still included, but their skill field may be empty.
+-- The final result is sorted by salary in descending order.
+
 WITH highest_paying_jobs AS
 (SELECT 
     job_id,
