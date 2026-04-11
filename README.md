@@ -13,8 +13,8 @@ Key questions explored:
 # Tools I Used
 - **SQL:** used for querying the database
 - **PostgresSQL:** The chosen DBMS
-- **VSCode:** for database management and runnign SQL queries
-- **Git & GitHub:** Essential for verions control and sharing, collaboratoin and to track work progress
+- **VSCode:** for database management and running SQL queries
+- **Git & GitHub:** Essential for versions control and sharing, collaboratoin and to track work progress
 # The Analysis
 ### 1. Top paying Data Analyst Jobs
 ```
