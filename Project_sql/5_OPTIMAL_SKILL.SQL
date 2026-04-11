@@ -30,6 +30,9 @@ FINAL OUTPUT:
 → Skills that are BOTH in demand AND have salary information
 → This helps identify relevant skills where we can compare demand vs compensation
 
+FOR CALRITY:
+CTE JOIN type -->	What goes into each set
+Final INNER JOIN -->	What survives
 */
 
 WITH DEMAND_SKILL AS
@@ -66,5 +69,5 @@ SELECT
     DEMAND_COUNT,
     SALARY
 FROM DEMAND_SKILL
-INNER JOIN AVERAGE_SALARY ON DEMAND_SKILL.skill_id = AVERAGE_SALARY.skill_id
+INNER JOIN AVERAGE_SALARY ON DEMAND_SKILL.skill_id = AVERAGE_SALARY.skill_id -- THIS DEFINE WHAT SURIVEIVES FROM THOSE 2 CTE
 --ORDER BY
