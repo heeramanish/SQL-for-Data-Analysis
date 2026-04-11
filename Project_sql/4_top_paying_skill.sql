@@ -4,7 +4,7 @@ WHAT ARE TOP SKILLS BASED ON SALARY
 
 SELECT 
     --COUNT(SJD.job_id) AS DEMAND_COUNT,
-    AVG(JPF.salary_year_avg) AS SALARY,
+    ROUND(AVG(JPF.salary_year_avg),0) AS SALARY,
     SD.skills AS SKILL
     FROM job_postings_fact JPF
 LEFT JOIN skills_job_dim SJD ON SJD.job_id = JPF.job_id
